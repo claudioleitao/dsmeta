@@ -45,7 +45,7 @@ public class SmsService {
 				+ " com um total de R$ " + amount;
 */
 
-		String msg = "Iniciando Windows 95...";
+		String msg = "O vendedor " + sale.getSellerName();
 		
 		Twilio.init(twilioSid, twilioKey);
 
