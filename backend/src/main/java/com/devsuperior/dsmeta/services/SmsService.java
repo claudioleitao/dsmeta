@@ -39,12 +39,13 @@ public class SmsService {
 /*		String msg = "O vendedor "+ sale.getSellerName() + " foi destaque em " + date
 				+ " com um total de R$ " + String.format("%.2f", sale.getAmount());
 */
-		String amount = new DecimalFormat("###0.00").format(sale.getAmount());
-		
-		System.out.println("Amount = " + amount);
-		
+/*		String amount = new DecimalFormat("###0.00").format(sale.getAmount());
+				
 		String msg = "O vendedor "+ sale.getSellerName() + " foi destaque em " + date
 				+ " com um total de R$ " + amount;
+*/
+
+		String msg = "Iniciando Windows 95...";
 		
 		Twilio.init(twilioSid, twilioKey);
 
