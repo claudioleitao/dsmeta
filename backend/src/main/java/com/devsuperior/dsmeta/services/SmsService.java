@@ -45,8 +45,10 @@ public class SmsService {
 				+ " com um total de R$ " + amount;
 */
 
-		String msg = "O vendedor " + sale.getSellerName() + " foi destaque em " + date
+/*		String msg = "O vendedor " + sale.getSellerName() + " foi destaque em " + date
 				+ " com um total de R$ " + String.format("%.2f", 12.5f);
+*/
+		String msg = String.format("O vendedor %s foi destaque em %s com um total de R$ ", sale.getSellerName(), date);
 		
 		Twilio.init(twilioSid, twilioKey);
 
